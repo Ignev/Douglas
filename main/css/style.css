@@ -1,32 +1,209 @@
-*,*::after,*::before{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 /* Fonts */
 
 @font-face {
-    font-family: 'Avenir';
-    src: url('fonts/Avenir-Roman.eot');
-    src: local('Avenir Roman'), local('Avenir-Roman'),
-        url('fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Avenir-Roman.woff2') format('woff2'),
-        url('fonts/Avenir-Roman.woff') format('woff'),
-        url('fonts/Avenir-Roman.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Roman.eot");
+  src: local("Avenir Roman"), local("Avenir-Roman"),
+    url("fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Avenir-Roman.woff2") format("woff2"),
+    url("fonts/Avenir-Roman.woff") format("woff"),
+    url("fonts/Avenir-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sanchez';
-    src: url('fonts/Avenir-Roman.eot');
-    src: local('Sanchez Regular'), local('Sanchez-Regular'),
-        url('fonts/Sanchez-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Sanchez-Regular.woff2') format('woff2'),
-        url('fonts/Sanchez-Regular.woff') format('woff'),
-        url('fonts/Sanchez-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Sanchez";
+  src: url("fonts/Avenir-Roman.eot");
+  src: local("Sanchez Regular"), local("Sanchez-Regular"),
+    url("fonts/Sanchez-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Sanchez-Regular.woff2") format("woff2"),
+    url("fonts/Sanchez-Regular.woff") format("woff"),
+    url("fonts/Sanchez-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  background: #ffffff;
+  font-family: "Avenir";
+}
+button {
+  background: 0;
+  border: 0;
+  outline: none;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  font-size: 6vw;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Popup */
+
+.popup {
+  font-family: "Sanchez";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+  background: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  display: none;
+}
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+}
+.close__media {
+  width: 100%;
+}
+.info__title, .description__title, .info{
+    margin-bottom: 20px;
+}
+/* Logo */
+
+.logo {
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo__media {
+  width: 100%;
+}
+
+/* Center */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+  width: 100%;
+}
+.center__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.center__text {
+  color: #da291c;
+  font-size: 8vw;
+  font-family: "Sanchez";
+  margin-right: 25px;
+}
+.title__btn {
+  width: 10%;
+}
+.title__media {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+/* Slider */
+
+.center__slider {
+  width: 100vh;
+  position: relative;
+  margin-bottom: 7%;
+}
+.slider__item {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.slider__media {
+  width: 40%;
+}
+.slider__text {
+  font-family: "Sanchez";
+  margin-bottom: 10px;
+}
+.slider__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.list__item {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 5px;
+  list-style: none;
+  margin-bottom: 10px;
+  line-height: 17px;
+}
+.list__item:last-child {
+  margin-bottom: 0;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff0000;
+}
+.slick-active button {
+  background: transparent;
+  border: 1px solid #ff0000;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  width: 5vw;
+}
+.slider__btn__media {
+  width: 100%;
+}
+.slider__pre {
+  left: 5%;
+}
+.slider__next {
+  right: 5%;
+}
+
+/* Button */
+
+.btn {
+  width: 50%;
+}
+.btn__media {
+  width: 100%;
 }

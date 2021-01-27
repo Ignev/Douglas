@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="content">
-        
+      <div class="popup" id="popup">
+        <div class="close" id="btn">
+          <img src="img/close.png" alt="close" class="close__media">
+        </div>
+        <div class="info">
+          <p class="info__title">A1 Smart Home S</p>
+          <p class="info__text">Mit dem A1 Smart Home Standard Gateway.</p>
+        </div>
+        <div class="description">
+          <p class="description__title">Inkludiert:</p>
+          <p class="description__text">
+            Selbstlernende App A1 Gateway Standard Videospeicher: 3 Tage Gratis
+            Indoor Kamera Sie können ganz einfach Ihrer Smart Home Konfiguration
+            weitere Geräte hinzufügen.
+          </p>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="img/logo.png" alt="logo" class="logo__media" />
+      </div>
+      <div class="center">
+        <div class="center__title">
+          <p class="center__text">
+            A1 Smart <br />
+            Home Tarife
+          </p>
+          <button class="title__btn" id="plus">
+            <img
+              src="img/plus.png"
+              alt="plus"
+              class="title__media"
+              id="plus__media"
+            />
+          </button>
+        </div>
+        <div class="center__slider">
+          <div class="slider__item">
+            <img src="img/slide1.jpg" alt="slide 1" class="slider__media" />
+            <div class="slider__title">
+              <p class="slider__text">A1 Smart Home S</p>
+            </div>
+            <ul class="slider__list">
+              <li class="list__item">
+                Standard Gateway only <br />
+                € 0, - <br />
+                Einmalige Kosten
+              </li>
+              <li class="list__item">
+                € 7, 90 <br />
+                Monatliche Kosten
+              </li>
+            </ul>
+          </div>
+          <div class="slider__item">
+            <img src="img/slide2.jpg" alt="slide 2" class="slider__media" />
+            <div class="slider__title">
+              <p class="slider__text">A1 Smart Home S</p>
+            </div>
+            <ul class="slider__list">
+              <li class="list__item">
+                Standard Gateway only <br />
+                € 0, - <br />
+                Einmalige Kosten
+              </li>
+              <li class="list__item">
+                € 7, 90 <br />
+                Monatliche Kosten
+              </li>
+            </ul>
+          </div>
+          <div class="slider__item">
+            <img src="img/slide3.jpg" alt="slide 3" class="slider__media" />
+            <div class="slider__title">
+              <p class="slider__text">A1 Smart Home S</p>
+            </div>
+            <ul class="slider__list">
+              <li class="list__item">
+                Standard Gateway only <br />
+                € 0, - <br />
+                Einmalige Kosten
+              </li>
+              <li class="list__item">
+                € 7, 90 <br />
+                Monatliche Kosten
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="slider__btn slider__pre">
+        <img src="img/pre.png" alt="pre" class="slider__btn__media" />
+      </button>
+      <button class="slider__btn slider__next">
+        <img src="img/next.png" alt="next" class="slider__btn__media" />
+      </button>
+      <button class="btn">
+        <img src="img/button.png" alt="button" class="btn__media" />
+      </button>
     </div>
-
-    <script src="js/script.js" ></script>
-</body>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -27,6 +27,12 @@ body {
   font-family: "Sanchez";
 }
 
+button {
+  background: 0;
+  border: 0;
+  outline: none;
+}
+
 .content {
   width: 100%;
   height: 100%;
