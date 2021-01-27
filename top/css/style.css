@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Sanchez";
+  src: url("fonts/Sanchez-Regular.woff2") format("woff2"),
+    url("fonts/Sanchez-Regular.woff") format("woff"),
+    url("fonts/Sanchez-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Sanchez-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Sanchez";
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  font-size: 6vw;
+  background: url(../img/bg.jpg) 50% 50% / 100% no-repeat;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 50px;
+}
+.logo {
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo__media {
+  width: 100%;
+}
+.title__text {
+  color: #da291c;
+}
+.btn {
+  width: 40vw;
+  bottom: 0;
+  background: 0;
+}
+.btn__media {
+  width: 100%;
+}
