@@ -80,9 +80,16 @@ button {
 .close__media {
   width: 100%;
 }
-.info__title, .description__title, .info{
-    margin-bottom: 20px;
+.info__title,
+.description__title,
+.info {
+  margin-bottom: 20px;
 }
+.info__title,
+.description__title{
+    font-weight: bold;
+}
+
 /* Logo */
 
 .logo {
@@ -118,13 +125,6 @@ button {
   font-family: "Sanchez";
   margin-right: 25px;
 }
-.title__btn {
-  width: 10%;
-}
-.title__media {
-  width: 100%;
-  transition: 0.5s ease;
-}
 
 /* Slider */
 
@@ -133,12 +133,24 @@ button {
   position: relative;
   margin-bottom: 7%;
 }
+.title__btn {
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  right: 25%;
+  border: 0 !important;
+}
+.title__media {
+  width: 100%;
+  transition: 0.5s ease;
+}
 .slider__item {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 60vw;
+  position: relative;
 }
 .slider__media {
   width: 40%;
