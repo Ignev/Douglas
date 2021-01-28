@@ -11,10 +11,10 @@
 
 @font-face {
   font-family: "Sanchez";
-  src: url("fonts/Sanchez-Regular.woff2") format("woff2"),
-    url("fonts/Sanchez-Regular.woff") format("woff"),
-    url("fonts/Sanchez-Regular.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Sanchez-Regular.ttf") format("truetype");
+  src: url("../fonts/Sanchez-Regular.woff2") format("woff2"),
+    url("../fonts/Sanchez-Regular.woff") format("woff"),
+    url("../fonts/Sanchez-Regular.ttf") format("truetype"),
+    url("../fonts/Sanchez-Regular.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }

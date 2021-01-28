@@ -10,25 +10,20 @@
 /* Fonts */
 
 @font-face {
-  font-family: "Avenir";
-  src: url("fonts/Avenir-Roman.eot");
-  src: local("Avenir Roman"), local("Avenir-Roman"),
-    url("fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Avenir-Roman.woff2") format("woff2"),
-    url("fonts/Avenir-Roman.woff") format("woff"),
-    url("fonts/Avenir-Roman.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Univers-LT-47-Condensed-Light";
+  src: url("../fonts/Univers-LT-47-Condensed-Light.woff2") format("woff2"),
+  url("../fonts/Univers-LT-47-Condensed-Light.woff") format("woff"),
+  url("../fonts/Univers-LT-47-Condensed-Light.ttf") format("truetype");
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Sanchez";
-  src: url("fonts/Avenir-Roman.eot");
-  src: local("Sanchez Regular"), local("Sanchez-Regular"),
-    url("fonts/Sanchez-Regular.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Sanchez-Regular.woff2") format("woff2"),
-    url("fonts/Sanchez-Regular.woff") format("woff"),
-    url("fonts/Sanchez-Regular.ttf") format("truetype");
+  src: url("../fonts/Sanchez-Regular.woff2") format("woff2"),
+    url("../fonts/Sanchez-Regular.woff") format("woff"),
+    url("../fonts/Sanchez-Regular.ttf") format("truetype"),
+    url("../fonts/Sanchez-Regular.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,7 +31,7 @@
 body,
 html {
   background: #ffffff;
-  font-family: "Avenir";
+  font-family: "Univers-LT-47-Condensed-Light";
 }
 button {
   background: 0;
@@ -86,8 +81,8 @@ button {
   margin-bottom: 20px;
 }
 .info__title,
-.description__title{
-    font-weight: bold;
+.description__title {
+  font-weight: bold;
 }
 
 /* Logo */
@@ -160,6 +155,7 @@ button {
   margin-bottom: 10px;
 }
 .slider__list {
+  
   display: flex;
   justify-content: center;
   flex-direction: column;
