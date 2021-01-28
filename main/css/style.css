@@ -101,13 +101,15 @@ button {
 .description__title,
 .info {
   margin-bottom: 20px;
+
 }
 .info__title,
 .description__title {
   font-weight: bold;
+  font-size: 7vw;
 }
 .info__text, .description__text{
-  font-size: 5.5vw;
+  font-size: 5vw;
   font-family: "Univers-LT-47-Condensed-Light";
 }
 
