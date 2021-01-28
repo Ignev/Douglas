@@ -106,10 +106,10 @@ button {
 .info__title,
 .description__title {
   font-weight: bold;
-  font-size: 7vw;
+  font-size: 8vw;
 }
 .info__text, .description__text{
-  font-size: 5vw;
+  font-size: 6vw;
   font-family: "Univers-LT-47-Condensed-Light";
 }
 
