@@ -62,7 +62,7 @@ button {
   background: #ffffff;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
   display: none;
 }
 .popup-anime-on{
@@ -105,6 +105,10 @@ button {
 .info__title,
 .description__title {
   font-weight: bold;
+}
+.info__text, .description__text{
+  font-size: 5.5vw;
+  font-family: "Univers-LT-47-Condensed-Light";
 }
 
 /* Logo */
