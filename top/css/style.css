@@ -60,6 +60,18 @@ button {
   width: 40vw;
   bottom: 0;
   background: 0;
+  animation: puls 1.5s infinite ease;
+}
+@keyframes puls{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 .btn__media {
   width: 100%;
