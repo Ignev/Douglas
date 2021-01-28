@@ -105,7 +105,6 @@ button {
 }
 .info__title,
 .description__title {
-  font-weight: bold;
   font-size: 8vw;
 }
 .info__text, .description__text{
