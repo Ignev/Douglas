@@ -65,6 +65,28 @@ button {
   padding: 20px;
   display: none;
 }
+.popup-anime-on{
+  animation: fadein .5s ease;
+}
+.popup-anime-off{
+  animation: fadeout .5s ease;
+}
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes fadeout{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 .close {
   position: absolute;
   top: 5px;
@@ -88,7 +110,7 @@ button {
 /* Logo */
 
 .logo {
-  width: 10vw;
+  width: 15vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -119,6 +141,7 @@ button {
   font-size: 8vw;
   font-family: "Sanchez";
   margin-right: 25px;
+  text-align: center;
 }
 
 /* Slider */
@@ -131,9 +154,10 @@ button {
 .title__btn {
   width: 7vw;
   position: absolute;
-  top: 0;
+  top: 0%;
   right: 25%;
   border: 0 !important;
+  z-index: 9;
 }
 .title__media {
   width: 100%;
@@ -146,6 +170,7 @@ button {
   align-items: center;
   width: 60vw;
   position: relative;
+  padding-top: 15px;
 }
 .slider__media {
   width: 40%;

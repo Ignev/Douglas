@@ -23,8 +23,10 @@ let deg3 = 0;
 plus1.addEventListener('click', () => {
     deg1 += 90;
     plus__media1.style.transform = `rotate(${deg1}deg)`;
+    popup.classList.remove("popup-anime-off");
     setTimeout(() => {
         popup.style.display = "flex";
+        popup.classList.add("popup-anime-on");
     }, 500)
 })
 plus2.addEventListener('click', () => {
@@ -36,5 +38,10 @@ plus3.addEventListener('click', () => {
     plus__media3.style.transform = `rotate(${deg3}deg)`;
 })
 btn.addEventListener('click', () => {
-    popup.style.display = "none";
+    popup.classList.remove("popup-anime-on");
+    popup.classList.add("popup-anime-off");
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 500)
+    
 })
