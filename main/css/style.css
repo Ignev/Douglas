@@ -59,6 +59,165 @@ button {
   position: relative;
 }
 
+/* Animation */
+
+.animation-block{
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  font-size: 36px;
+  font-family: "Sanchez", serif;
+  display: none;
+}
+.animation-block-active{
+  display: flex;
+  animation: block-active 1.2s 4.8s ease;
+}
+@keyframes block-active{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
+}
+/* First block */
+
+.animation__first, .animation__second, .animation__third, .animation__fourth{
+  background: #da291c;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+}
+.animation__second, .animation__third, .animation__fourth{
+  opacity: 0;
+}
+.top-line{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bottom-line{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+}
+.line__media{
+  width: 100%;
+  height: 100%;
+}
+.first__logo{
+  width: 40%;
+  margin-bottom: 20px;
+}
+.first__logo__media{
+  width: 100%;
+}
+.first__text{
+  color: #fff;
+}
+
+/* Second block */
+.animation__second{
+  background: #fff;
+}
+.second__text{
+  color: #da291c;
+}
+.animation-block-active .animation__second{
+  animation: fade2 1.2s ease;
+  animation-delay: 1.2s;
+}
+@keyframes fade2 {
+  0%{
+    opacity: 0;
+    bottom: 100%;
+  }
+  100%{
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.animation-block-active .animation__third{
+  background: #fff;
+  color: #da291c;
+  animation: fade3 1.2s ease;
+  animation-delay: 2.4s;
+}
+@keyframes fade3 {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.animation__third p{
+  text-align: center;
+}
+.one-text{
+  position: relative;
+  animation: one-text 1.2s 2.4s ease;
+}
+.two-text{
+  position: relative;
+  animation: two-text 1.2s 2.4s ease;
+}
+@keyframes one-text{
+  0%{
+    right: 100%;
+  }
+  100%{
+    right: 0%;
+  }
+}
+@keyframes two-text{
+  0%{
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+.third__top-line{
+  animation: third-top 1.2s 2.4s ease;
+}
+@keyframes third-top{
+  0%{
+    right: 100%;
+    transform: rotate(270deg);
+    top: 10%;
+  }
+  100%{
+    right: 0%;
+    transform: rotate(0deg);
+    top: 0;
+  }
+}
+.third__bottom-line{
+  animation: one-text 1.2s 2.4s ease;
+}
+
+/* Fourth blok */
+
+.animation-block-active .animation__fourth{
+  background: #fff;
+  color: #da291c;
+}
+.fourth__text{
+  animation: fade3 1.2s ease;
+  animation-delay: 3.6s;
+}
+
 /* Popup */
 
 .popup {

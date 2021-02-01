@@ -11,7 +11,7 @@ $(".center__slider").slick({
   pauseOnHover: true,
   autoplaySpeed: 3000,
   arrows: true,
-//   autoplay: true,
+  autoplay: true,
   prevArrow: ".slider__pre",
   nextArrow: ".slider__next",
   dots: true
@@ -45,3 +45,6 @@ btn.addEventListener('click', () => {
     }, 500)
     
 })
+setTimeout(()=>{
+    animationBlock.style.display = "none";
+}, 4800)
