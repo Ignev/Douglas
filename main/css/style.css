@@ -97,9 +97,25 @@ button {
   position: absolute;
   z-index: 100;
 }
-.animation__second, .animation__third, .animation__fourth{
+.animation-block-active .animation-item{
   opacity: 0;
 }
+.animation-block-active .animation-item:nth-child(1) {
+  animation-delay: 0s;
+  opacity: 1;
+}
+.animation-block-active .animation-item:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.animation-block-active .animation-item:nth-child(3) {
+  animation-delay: 2.4s;
+}
+.animation-block-active .animation-item:nth-child(4) {
+  animation-delay: 3.6s;
+}
+
+/* Lines */
+
 .top-line{
   position: absolute;
   top: 0;
@@ -111,32 +127,14 @@ button {
   display: flex;
   width: 100%;
 }
+
 .line__media{
   width: 100%;
   height: 100%;
 }
-.first__logo{
-  width: 40%;
-  margin-bottom: 20px;
-}
-.first__logo__media{
-  width: 100%;
-}
-.first__text{
-  color: #fff;
-}
 
-/* Second block */
-.animation__second{
-  background: #fff;
-}
-.second__text{
-  color: #da291c;
-}
-.animation-block-active .animation__second{
-  animation: fade2 1.2s ease;
-  animation-delay: 1.2s;
-}
+/* Keyframes */
+
 @keyframes fade2 {
   0%{
     opacity: 0;
@@ -147,12 +145,7 @@ button {
     bottom: 0;
   }
 }
-.animation-block-active .animation__third{
-  background: #fff;
-  color: #da291c;
-  animation: fade3 1.2s ease;
-  animation-delay: 2.4s;
-}
+
 @keyframes fade3 {
   0%{
     opacity: 0;
@@ -160,17 +153,6 @@ button {
   100%{
     opacity: 1;
   }
-}
-.animation__third p{
-  text-align: center;
-}
-.one-text{
-  position: relative;
-  animation: one-text 1.2s 2.4s ease;
-}
-.two-text{
-  position: relative;
-  animation: two-text 1.2s 2.4s ease;
 }
 @keyframes one-text{
   0%{
@@ -188,9 +170,6 @@ button {
     left: 0%;
   }
 }
-.third__top-line{
-  animation: third-top 1.2s 2.4s ease;
-}
 @keyframes third-top{
   0%{
     right: 100%;
@@ -203,6 +182,56 @@ button {
     top: 0;
   }
 }
+
+/* First item */
+
+.first__logo{
+  width: 40%;
+  margin-bottom: 20px;
+}
+.first__logo__media{
+  width: 100%;
+}
+.first__text{
+  color: #fff;
+}
+
+/* Second block */
+
+.animation__second{
+  background: #fff;
+}
+.second__text{
+  color: #da291c;
+}
+.animation-block-active .animation__second{
+  animation: fade2 1.2s ease;
+  animation-delay: 1.2s;
+}
+
+.animation-block-active .animation__third{
+  background: #fff;
+  color: #da291c;
+  animation: fade3 1.2s ease;
+  animation-delay: 2.4s;
+}
+
+.animation__third p{
+  text-align: center;
+}
+.one-text{
+  position: relative;
+  animation: one-text 1.2s 2.4s ease;
+}
+.two-text{
+  position: relative;
+  animation: two-text 1.2s 2.4s ease;
+}
+
+.third__top-line{
+  animation: third-top 1.2s 2.4s ease;
+}
+
 .third__bottom-line{
   animation: one-text 1.2s 2.4s ease;
 }
@@ -212,6 +241,8 @@ button {
 .animation-block-active .animation__fourth{
   background: #fff;
   color: #da291c;
+  animation: fade3 1.2s ease;
+  animation-delay: 3.6s;
 }
 .fourth__text{
   animation: fade3 1.2s ease;
