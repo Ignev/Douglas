@@ -48,19 +48,7 @@ btn.addEventListener('click', () => {
 const firstItems = document.querySelector(".animation__first");
 const secondItems = document.querySelector(".animation__second");
 const thirdItems = document.querySelector(".animation__third");
-    setTimeout(()=>{
-        firstItems.style.display = "none";
-        console.log(1)
-    }, 2000)
-    setTimeout(()=>{
-        secondItems.style.display = "none";
-        console.log(2)
-    }, 2800)
-    setTimeout(()=>{
-        thirdItems.style.display = "none";
-        console.log(3)
-    }, 4000)
     
 setTimeout(()=>{
     animationBlock.style.display = "none";
-}, 6000)
+}, 5600)
