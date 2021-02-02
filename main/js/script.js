@@ -51,4 +51,4 @@ const thirdItems = document.querySelector(".animation__third");
     
 setTimeout(()=>{
     animationBlock.style.display = "none";
-}, 5500)
+}, 5200)
