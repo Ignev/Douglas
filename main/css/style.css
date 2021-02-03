@@ -355,6 +355,16 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  animation: logo 1.2s ease;
+  animation-delay: 4.5s;
+}
+@keyframes logo{
+  0%{
+    top: -100%;
+  }
+  100%{
+    top: 0;
+  }
 }
 .logo__media {
   width: 100%;

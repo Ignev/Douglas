@@ -24,9 +24,7 @@ setTimeout(()=>{
     animationBlock.style.display = "none";
 }, 5200)
 
-setTimeout(()=>{
-    btn.style.animation = "puls 1.5s infinite ease";
-}, 6450)
+
 
 plus1.addEventListener('click', () => {
     deg1 += 90;
@@ -36,6 +34,7 @@ plus1.addEventListener('click', () => {
         popup.style.display = "flex";
         popup.classList.add("popup-anime-on");
     }, 500)
+    
 })
 plus2.addEventListener('click', () => {
     deg2 += 90;
@@ -45,13 +44,13 @@ plus3.addEventListener('click', () => {
     deg3 += 90;
     plus__media3.style.transform = `rotate(${deg3}deg)`;
 })
-btn.addEventListener('click', () => {
+btnClose.addEventListener('click', () => {
     popup.classList.remove("popup-anime-on");
     popup.classList.add("popup-anime-off");
     setTimeout(() => {
         popup.style.display = "none";
     }, 500)
-    
+    console.log(1);
 })
     
 
