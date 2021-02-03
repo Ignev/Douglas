@@ -20,6 +20,14 @@ let deg1 = 0;
 let deg2 = 0;
 let deg3 = 0;
 
+setTimeout(()=>{
+    animationBlock.style.display = "none";
+}, 5200)
+
+setTimeout(()=>{
+    btn.style.animation = "puls 1.5s infinite ease";
+}, 6450)
+
 plus1.addEventListener('click', () => {
     deg1 += 90;
     plus__media1.style.transform = `rotate(${deg1}deg)`;
@@ -45,10 +53,7 @@ btn.addEventListener('click', () => {
     }, 500)
     
 })
-const firstItems = document.querySelector(".animation__first");
-const secondItems = document.querySelector(".animation__second");
-const thirdItems = document.querySelector(".animation__third");
     
-setTimeout(()=>{
-    animationBlock.style.display = "none";
-}, 5200)
+
+
+
