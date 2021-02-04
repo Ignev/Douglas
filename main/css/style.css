@@ -67,7 +67,7 @@ button {
   height: 100%;
   z-index: 100;
   animation: animation 1.8s ease;
-  animation-delay: 6.25s;
+  animation-delay: 6.75s;
   display: none;
 }
 
@@ -176,7 +176,7 @@ button {
   background: #fff;
   color: #da291c;
   opacity: 0;
-  animation: animation-three 4s ease;
+  animation: animation-three 5.4s ease;
   animation-delay: 3.6s;
 }
 .animation-three span{
@@ -212,7 +212,7 @@ button {
   left: 30%;
   opacity: 0;
   animation: third-text 1.8s ease-in;
-  animation-delay: 4.8s;
+  animation-delay: 5.4s;
 }
 @keyframes animation-three{
   0%{
@@ -368,6 +368,7 @@ button {
 }
 .logo-anim{
   animation: logo 1.2s ease;
+  
 }
 @keyframes logo{
   0%{
