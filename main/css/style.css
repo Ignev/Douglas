@@ -114,7 +114,7 @@ button {
 .animation-one {
   background: #da291c;
   color: #fff;
-  animation: animation-one 3.2s ease;
+  animation: animation-one 3s ease;
   opacity: 0;
 }
 .animation__logo {
@@ -175,7 +175,7 @@ button {
   color: #da291c;
   opacity: 0;
   animation: animation-three 3.6s ease;
-  
+  animation-delay: 2.4s;
 }
 .animation-three span{
   text-align: center;
