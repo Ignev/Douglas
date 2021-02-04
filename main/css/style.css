@@ -154,12 +154,12 @@ button {
     opacity: 0;
     bottom: 100%;
   }
-  50%{
+  25%{
     opacity: 1;
     bottom: 0;
   }
-  75%{
-    opacity: 0.7;
+  90%{
+    opacity: 1;
     bottom: 0;
   }
   100%{
