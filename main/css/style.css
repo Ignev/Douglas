@@ -119,9 +119,11 @@ button {
 }
 .animation__logo {
   width: 50%;
+  border-radius: 25px;
 }
 .animation__logo__media {
   width: 100%;
+  border-radius: 25px;
 }
 
 @keyframes animation-one{
