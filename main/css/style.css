@@ -188,12 +188,12 @@ button {
 }
 .animation-three__bottom-line{
   animation: bottom-line 1.8s ease;
-  animation-delay: 3.6s;
+  animation-delay: 3.5s;
 }
 
 .animation-three__first-text{
   animation: first-text 1.8s ease;
-  animation-delay: 3.6s;
+  animation-delay: 3.5s;
   position: relative;
   opacity: 0;
 }
