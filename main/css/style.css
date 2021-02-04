@@ -68,6 +68,7 @@ button {
   z-index: 100;
   animation: animation 1.2s ease;
   animation-delay: 4.5s;
+  display: none;
 }
 
 @keyframes animation{

@@ -20,11 +20,6 @@ let deg1 = 0;
 let deg2 = 0;
 let deg3 = 0;
 
-setTimeout(()=>{
-    animationBlock.style.display = "none";
-}, 5200)
-
-
 
 plus1.addEventListener('click', () => {
     deg1 += 90;

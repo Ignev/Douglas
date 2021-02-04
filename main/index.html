@@ -174,12 +174,94 @@
       <button class="slider__btn slider__next">
         <img src="img/next.png" alt="next" class="slider__btn__media" />
       </button>
-      <button class="btn">
+      <button class="btn" id="btn">
         <img src="img/button.png" alt="button" class="btn__media" />
       </button>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript">
+
+      var hellopreloader = document.getElementById("hellopreloader_preload");
+  
+      function fadeOutnojquery(el) {
+          el.style.opacity = 1;
+          var interhellopreloader = setInterval(function() {
+              el.style.opacity = el.style.opacity - 0.05;
+              if (el.style.opacity <= 0.05) {
+                  clearInterval(interhellopreloader);
+                  hellopreloader.style.display = "none";
+              }
+          }, 16);
+      }
+      window.onload = function() {
+          setTimeout(function() {
+              fadeOutnojquery(hellopreloader);
+          }, 1000);
+      };
+  </script>
+  <script>
+  
+      var avgVStart = 0.01; 
+      var avgVEnd = 0.0;
+      var isInterstitial = false;
+      var animation = false;
+      if (!isInterstitial) {
+          window.addEventListener('message', function (event) {
+              var parseData = JSON.parse(event.data);
+  
+              if (parseData.rectangleTop > 0 && parseData.viewablePercent / 100 > avgVStart) {
+                if(animation){
+                  return
+                }
+                else{
+                  animationBlock.style.display = "block";
+                setTimeout(() => {
+                  animationBlock.style.display = "none";
+                }, 5200)
+                animation = true;
+                }
+                
+              }
+  
+              if (parseData.rectangleTop < 0 && parseData.viewablePercent / 100 < avgVEnd) {
+  
+              }
+          });
+      }
+  </script>
+  <!-- <script>
+      var x_click = document.getElementsByTagName("body")[0];
+      x_click.addEventListener("click", clickout_1);
+  
+          
+  var clickTag="";
+  
+      var dspx_debug = readGETParameter("dspx_debug");
+      function readGETParameter(c){var o=window.location.search.substring(1);var n=o.split("&");for(var e=0;e<n.length;e++){var i=n[e].split("=");if(i[0]==c){return decodeURIComponent(i[1])}}return c=="encodelevel"?2:0}
+      function fireASCClicks(){var _c="dspx_clicktagASC",_nn=5;var cASC=function(c,nn){var n=window.location.search.substring(1),i=n.split("&");var aa=[];for(var e=0;e<i.length;e++){var o=i[e].split("=");for(var ni=0;ni<nn;ni++){if(ni==0)cc=c;else cc=c+ni;if(o[0]==cc){aa.push(decodeURIComponent(o[1]))}}}return aa};var ctASC=cASC(_c,_nn);for(i=0;i<ctASC.length;i++){if(dspx_debug==1)console.log("fire Click ASC:"+ctASC[i]);(new Image).src=ctASC[i]}}
+  
+      function clickout_1(){
+          fireASCClicks();
+          var e=readGETParameter("clicktag")||clickTag;
+          if(dspx_debug==1){console.log(e);}
+          window.open(e)
+      }
+          
+      function track_vtr (progress) {
+          if (progress == 0) {
+              console.log(progress);
+          } else if (progress == 25) {
+              console.log(progress);
+          } else if (progress == 50) {
+              console.log(progress);
+          } else if (progress == 75) {
+              console.log(progress);
+          } else if (progress == 100) {
+              console.log(progress);
+          }
+      }
+  </script> -->
   </body>
 </html>
