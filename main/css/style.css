@@ -176,7 +176,7 @@ button {
   background: #fff;
   color: #da291c;
   opacity: 0;
-  animation: animation-three 5.4s ease;
+  animation: animation-three 4s ease;
   animation-delay: 3.6s;
 }
 .animation-three span{
