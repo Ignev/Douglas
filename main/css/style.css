@@ -114,7 +114,7 @@ button {
 .animation-one {
   background: #da291c;
   color: #fff;
-  animation: animation-one 3s ease;
+  animation: animation-one 3.2s ease;
   opacity: 0;
 }
 .animation__logo {
@@ -145,7 +145,7 @@ button {
   background: #fff;
   color: #da291c;
   opacity: 0;
-  animation: animation-two 2.2s ease;
+  animation: animation-two 2.4s ease;
   animation-delay: 1.2s;
 }
 
@@ -175,30 +175,30 @@ button {
   color: #da291c;
   opacity: 0;
   animation: animation-three 3.6s ease;
-  animation-delay: 2.0s;
+  
 }
 .animation-three span{
   text-align: center;
 }
 .animation-three__top-line{
   animation: top-line 1.2s ease;
-  animation-delay: 2.0s;
+  animation-delay: 2.4s;
 }
 .animation-three__bottom-line{
   animation: bottom-line 1.2s ease;
-  animation-delay: 2.0s;
+  animation-delay: 2.4s;
 }
 
 .animation-three__first-text{
   animation: first-text 1.2s ease;
-  animation-delay: 2.3s;
+  animation-delay: 2.4s;
   position: relative;
   opacity: 0;
 }
 
 .animation-three__second-text{
   animation: second-text 1.2s ease;
-  animation-delay: 2.3s;
+  animation-delay: 2.4s;
   position: relative;
   opacity: 0;
 }
