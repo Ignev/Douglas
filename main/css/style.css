@@ -362,8 +362,10 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  
+}
+.logo-anim{
   animation: logo 1.2s ease;
-  animation-delay: 4.5s;
 }
 @keyframes logo{
   0%{
@@ -399,11 +401,12 @@ button {
   font-size: 8vw;
   font-family: "Sanchez";
   text-align: center;
-  animation: center__text 1.2s ease;
-  animation-delay: 4.5s;
+  
   position: relative;
 }
-
+.center__text-anim{
+  animation: center__text 1.2s ease;
+}
 @keyframes center__text {
   0%{
     right: 100%;
@@ -514,9 +517,14 @@ button {
 
 .btn {
   width: 50%;
-  animation: btn 1.2s ease;
-  animation-delay: 4.5s;
+  
   position: relative;
+}
+.btn-anim{
+  animation: btn 1.2s ease;
+}
+.btn-puls{
+  animation: puls 1.5s infinite ease;
 }
 @keyframes btn {
   0%{

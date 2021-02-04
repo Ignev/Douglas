@@ -220,7 +220,15 @@
                   animationBlock.style.display = "block";
                 setTimeout(() => {
                   animationBlock.style.display = "none";
-                }, 9360)
+                }, 9000)
+                setTimeout(() => {
+                  btn.classList.add("btn-anim");
+                  document.querySelector(".center__text").classList.add("center__title-anim");
+                  document.querySelector(".logo").classList.add("logo-anim");
+                }, 8100)
+                setTimeout(() => {
+                  btn.classList.add("btn-puls");
+                }, 10400)
                 animation = true;
                 }
                 
