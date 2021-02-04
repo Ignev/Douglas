@@ -66,8 +66,8 @@ button {
   width: 100%;
   height: 100%;
   z-index: 100;
-  animation: animation 2.2s ease;
-  animation-delay: 8.1s;
+  animation: animation 1.8s ease;
+  animation-delay: 6.75s;
   display: none;
 }
 
@@ -114,7 +114,7 @@ button {
 .animation-one {
   background: #da291c;
   color: #fff;
-  animation: animation-one 5.4s ease;
+  animation: animation-one 4.5s ease;
   opacity: 0;
 }
 .animation__logo {
@@ -145,8 +145,8 @@ button {
   background: #fff;
   color: #da291c;
   opacity: 0;
-  animation: animation-two 4.32s ease;
-  animation-delay: 2.2s;
+  animation: animation-two 3.6s ease;
+  animation-delay: 1.8s;
 }
 
 @keyframes animation-two{
@@ -174,31 +174,31 @@ button {
   background: #fff;
   color: #da291c;
   opacity: 0;
-  animation: animation-three 6.48s ease;
-  animation-delay: 4.32s;
+  animation: animation-three 5.4s ease;
+  animation-delay: 3.6s;
 }
 .animation-three span{
   text-align: center;
 }
 .animation-three__top-line{
-  animation: top-line 2.2s ease;
-  animation-delay: 4.32s;
+  animation: top-line 1.8s ease;
+  animation-delay: 3.6s;
 }
 .animation-three__bottom-line{
-  animation: bottom-line 2.2s ease;
-  animation-delay: 4.32s;
+  animation: bottom-line 1.8s ease;
+  animation-delay: 3.6s;
 }
 
 .animation-three__first-text{
-  animation: first-text 2.2s ease;
-  animation-delay: 4.32s;
+  animation: first-text 1.8s ease;
+  animation-delay: 3.6s;
   position: relative;
   opacity: 0;
 }
 
 .animation-three__second-text{
-  animation: second-text 2.2s ease;
-  animation-delay: 4.32s;
+  animation: second-text 1.8s ease;
+  animation-delay: 3.6s;
   position: relative;
   opacity: 0;
 }
@@ -209,8 +209,8 @@ button {
   top: 45%;
   left: 30%;
   opacity: 0;
-  animation: third-text 5.76s ease;
-  animation-delay: 6.48s;
+  animation: third-text 4.8s ease;
+  animation-delay: 5.4s;
 }
 @keyframes animation-three{
   0%{
