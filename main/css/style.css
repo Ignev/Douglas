@@ -209,7 +209,7 @@ button {
   top: 45%;
   left: 30%;
   opacity: 0;
-  animation: third-text 2s ease-out;
+  animation: third-text 1.8s ease-in;
   animation-delay: 5.4s;
 }
 @keyframes animation-three{
