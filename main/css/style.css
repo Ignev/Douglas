@@ -92,9 +92,10 @@ button {
   font-family: "Sanchez", serif;
   font-size: 36px;
   position: absolute;
+  overflow: hidden;
 }
 .line {
-  width: 100%;
+  width: 101%;
   position: absolute;
   display: flex;
 }
