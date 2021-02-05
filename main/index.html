@@ -27,7 +27,7 @@
               class="animation__logo__media"
             />
           </div>
-          <p class="animation-one__text">Telekom Austria 11</p>
+          <p class="animation-one__text">Telekom Austria</p>
           <div class="bottom-line line">
             <img
               src="img/bottom-line.svg"
@@ -276,10 +276,26 @@
       var x_click = document.getElementsByTagName("body")[0];
       x_click.addEventListener("click", (e) => {
         if (
-          e.target == btn || e.target == btn__media
-
+          e.target != plus1 &&
+          e.target != plus2 &&
+          e.target != plus3 &&
+          e.target != plus__media1 &&
+          e.target != plus__media2 &&
+          e.target != plus__media3 &&
+          e.target != btnClose &&
+          e.target != btnClose__media &&
+          e.target != slider__next &&
+          e.target != slider__pre &&
+          e.target != slider__pre__media &&
+          e.target != slider__next__media &&
+          e.target != slick-slide-control00 &&
+          e.target != slick-slide-control01 && 
+          e.target != slick-slide-control02
         ) {
           clickout_1();
+        }
+        else{
+          console.log(12)
         }
       });
 
