@@ -69,6 +69,7 @@ button {
   animation: animation 1.8s ease;
   animation-delay: 6.75s;
   display: none;
+  font-family: "Sanchez", serif;
 }
 
 @keyframes animation{
@@ -213,6 +214,7 @@ button {
   opacity: 0;
   animation: third-text 1.8s ease-in;
   animation-delay: 5.4s;
+  font-family: "Sanchez";
 }
 @keyframes animation-three{
   0%{
